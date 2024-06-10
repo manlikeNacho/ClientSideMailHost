@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ClientSideMailHost
 
-## Getting Started
+## Overview
 
-First, run the development server:
+ClientSideMailHost is a web application that allows users to fetch, view, and classify emails from their Gmail accounts using Google OAuth and OpenAI's API. This project is designed to enhance email management by automatically categorizing emails into different classes such as important, social, and promotional.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Google OAuth Authentication**: Securely log in with your Google account to access Gmail data.
+- **Fetch Emails**: Retrieve emails from your Gmail account.
+- **Email Classification**: Utilize OpenAI's API to classify emails into different categories.
+- **Responsive UI**: User-friendly interface optimized for both desktop and mobile devices.
+- **Dashboard**: View and manage your classified emails in a clean and organized dashboard.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Hosting
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The application is hosted on [Vercel](https://vercel.com/). You can access it [here](https://client-side-mail-host-git-main-iheanacho-emmas-projects.vercel.app).
 
-## Learn More
+## Screenshots
 
-To learn more about Next.js, take a look at the following resources:
+### Login Page
+![Login Page]
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Dashboard
+![Dashboard](https://user-images.githubusercontent.com/example/dashboard.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Email Classification
+![Email Classification](https://user-images.githubusercontent.com/example/classification.png)
 
-## Deploy on Vercel
+## Installation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Prerequisites
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Node.js and npm installed.
+- Google Cloud project with Gmail API enabled.
+- OpenAI API key.
+
+### Steps
+
+1. **Clone the repository**:
+   ```
+   git clone https://github.com/manlikeNacho/ClientSideMailHost.git
+   cd ClientSideMailHost
+   
+   ```
+2. Install dependencies:
+    ` npm install`
+3. Environment Variables:
+    Create a .env file in the root directory and add the following
+    ```
+    GOOGLE_CLIENT_ID=your-google-client-id
+    GOOGLE_CLIENT_SECRET=your-google-client-secret
+    NEXTAUTH_URL=http://localhost:3000
+    NEXTAUTH_SECRET=your-nextauth-secret
+    ```
+4. Run the development server:
+`npm run dev`
+
+5. Open your browser:
+Navigate to http://localhost:3000 to view the application.
+
+## Contributing
+We welcome contributions to enhance ClientSideMailHost. Please fork the repository and submit pull requests for any features or bug fixes.
