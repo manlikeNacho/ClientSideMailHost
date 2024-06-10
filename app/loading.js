@@ -3,7 +3,9 @@ import React from 'react'
 
 function Loading() {
   return (
-    <Spinner color='default' size='lg'/>
+    <div className='w-full h-full flex items-center justify-center'>
+      <Spinner color='default' size='lg'/>
+    </div>
   )
 }
 
