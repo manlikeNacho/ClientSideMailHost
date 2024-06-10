@@ -3,8 +3,6 @@
 import { Button } from '@nextui-org/button';
 import { Login } from '../app/actions/index.js';
 import OpenAIKeyInput from '../app/components/openaiKeyInput.js';
-import Loading from './loading.js';
-import MessageModal from './components/messageModal.jsx';
 
 function Home() {
 
