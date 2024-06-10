@@ -2,7 +2,7 @@
 
 ## Overview
 
-ClientSideMailHost is a web application that allows users to fetch, view, and classify emails from their Gmail accounts using Google OAuth and OpenAI's API. This project is designed to enhance email management by automatically categorizing emails into different classes such as important, social, and promotional.
+ClientSideMailHost is a web application that allows users to fetch, view, and classify emails from their Gmail accounts using Google OAuth2.0 and OpenAI's API. This project is designed to enhance email management by automatically categorizing emails into different classes such as important, social, and promotional.
 
 ## Features
 
@@ -19,13 +19,8 @@ The application is hosted on [Vercel](https://vercel.com/). You can access it [h
 ## Screenshots
 
 ### Login Page
-![Login Page]
+Login Page![Screenshot (325)](https://github.com/manlikeNacho/ClientSideMailHost/assets/73090335/a6f3cbd1-7404-46f6-8cec-e4dcd649e517)
 
-### Dashboard
-![Dashboard](https://user-images.githubusercontent.com/example/dashboard.png)
-
-### Email Classification
-![Email Classification](https://user-images.githubusercontent.com/example/classification.png)
 
 ## Installation
 
