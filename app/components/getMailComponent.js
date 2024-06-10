@@ -54,7 +54,7 @@ function GetMailComponent() {
       const openAiKey = process.env.NEXT_PUBLIC_OPENAI_API_KEY;
       const googleAccessToken = localStorage.getItem("accessToken");
 
-      const res = await fetch('http://localhost:8080/mail', {
+      const res = await fetch('https://gmailloader.onrender.com/mail', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
