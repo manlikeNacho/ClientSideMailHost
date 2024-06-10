@@ -32,6 +32,11 @@ function GetMailComponent() {
         },
       });
 
+      if (!res.ok) {
+        const errorData = await res.json();
+        throw new Error(errorData.error || 'Failed to fetch data');
+      }
+
       const mails = await res.json();
       setMail(mails);
     } catch (error) {
@@ -49,7 +54,7 @@ function GetMailComponent() {
       const openAiKey = process.env.NEXT_PUBLIC_OPENAI_API_KEY;
       const googleAccessToken = localStorage.getItem("accessToken");
 
-      const res = await fetch('https://gmailloader.onrender.com/mail', {
+      const res = await fetch('http://localhost:8080/mail', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -59,7 +64,10 @@ function GetMailComponent() {
         body: JSON.stringify(mail),
       });
 
-
+      if (!res.ok) {
+        const errorData = await res.json();
+        throw new Error(errorData.error || 'Failed to fetch data');
+      }
       const mails = await res.json();
       setMail(mails);
     } catch (error) {
